@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "NSString+TruncateToWidth.h"
+#import "demo-Swift.h"
 
 @interface ViewController ()
 
@@ -22,13 +23,13 @@
     [self.view addSubview:self.label];
     self.label.frame = CGRectMake(100, 100, 200, 100);
     
-//    myLabel.text = [@"Benjamin Walker Jackson + 2 authors" stringByTruncatingAtString:@" +" toWidth:myLabel.frame.size.width withFont:myLabel.font];
-    
     self.label.text = [self.label.text stringByTruncatingAtString:@"]" width:200 numberOfLines:self.label.numberOfLines font:self.label.font];
     
-    
-    
-    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    ViewController1 *vc = [[ViewController1 alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (UILabel *)label {

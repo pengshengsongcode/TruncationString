@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		641D22532692A3FA00E5F2FF /* String+TruncateToWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641D22522692A3FA00E5F2FF /* String+TruncateToWidth.swift */; };
+		641D22552692AC7900E5F2FF /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641D22542692AC7900E5F2FF /* ViewController1.swift */; };
 		64D5C0CA268EF61900E887C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D5C0C9268EF61900E887C0 /* AppDelegate.m */; };
 		64D5C0CD268EF61900E887C0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D5C0CC268EF61900E887C0 /* SceneDelegate.m */; };
 		64D5C0D0268EF61900E887C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D5C0CF268EF61900E887C0 /* ViewController.m */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		641D22512692A3FA00E5F2FF /* demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		641D22522692A3FA00E5F2FF /* String+TruncateToWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+TruncateToWidth.swift"; sourceTree = "<group>"; };
+		641D22542692AC7900E5F2FF /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		64D5C0C5268EF61900E887C0 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D5C0C8268EF61900E887C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		64D5C0C9268EF61900E887C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -113,13 +118,16 @@
 				64D5C0CC268EF61900E887C0 /* SceneDelegate.m */,
 				64D5C0CE268EF61900E887C0 /* ViewController.h */,
 				64D5C0CF268EF61900E887C0 /* ViewController.m */,
+				641D22542692AC7900E5F2FF /* ViewController1.swift */,
 				64D5C0FD268EF6DB00E887C0 /* NSString+TruncateToWidth.h */,
 				64D5C0FE268EF6DB00E887C0 /* NSString+TruncateToWidth.m */,
+				641D22522692A3FA00E5F2FF /* String+TruncateToWidth.swift */,
 				64D5C0D1268EF61900E887C0 /* Main.storyboard */,
 				64D5C0D4268EF61A00E887C0 /* Assets.xcassets */,
 				64D5C0D6268EF61A00E887C0 /* LaunchScreen.storyboard */,
 				64D5C0D9268EF61A00E887C0 /* Info.plist */,
 				64D5C0DA268EF61A00E887C0 /* main.m */,
+				641D22512692A3FA00E5F2FF /* demo-Bridging-Header.h */,
 			);
 			path = demo;
 			sourceTree = "<group>";
@@ -208,6 +216,7 @@
 				TargetAttributes = {
 					64D5C0C4268EF61900E887C0 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					64D5C0DF268EF61A00E887C0 = {
 						CreatedOnToolsVersion = 12.5;
@@ -274,6 +283,8 @@
 				64D5C0D0268EF61900E887C0 /* ViewController.m in Sources */,
 				64D5C0FF268EF6DB00E887C0 /* NSString+TruncateToWidth.m in Sources */,
 				64D5C0CA268EF61900E887C0 /* AppDelegate.m in Sources */,
+				641D22532692A3FA00E5F2FF /* String+TruncateToWidth.swift in Sources */,
+				641D22552692AC7900E5F2FF /* ViewController1.swift in Sources */,
 				64D5C0DB268EF61A00E887C0 /* main.m in Sources */,
 				64D5C0CD268EF61900E887C0 /* SceneDelegate.m in Sources */,
 			);
@@ -447,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -455,6 +467,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = a.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "demo/demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -464,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,6 +488,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = a.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "demo/demo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -479,6 +497,7 @@
 		64D5C0F8268EF61A00E887C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = demoTests/Info.plist;
@@ -498,6 +517,7 @@
 		64D5C0F9268EF61A00E887C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = demoTests/Info.plist;
@@ -517,6 +537,7 @@
 		64D5C0FB268EF61A00E887C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = demoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -534,6 +555,7 @@
 		64D5C0FC268EF61A00E887C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = demoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
